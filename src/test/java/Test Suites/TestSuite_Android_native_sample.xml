@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="IFramework">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.sss.testng.IFrameworkMethodListener" />
+		<listener class-name="com.sss.testng.IFrameworkTestListener" />
+		<listener class-name="com.sss.testng.IFrameworkTestSuiteListener"/>
+	</listeners>
+
+	<test name="Selenium - TestNG">
+		<parameter name="device" value="android">
+			<provider name="appium" apptype="Native">
+				<!--<remoteaddress>http://192.168.1.70:4622/wd/hub</remoteaddress>-->
+				<apppackage>com.mobile.seveneleven</apppackage>
+				<appactivity>com.mobile.seveneleven.ui.shiftin.ShiftInActivity</appactivity>
+                <devicename>SSS MiPad</devicename>
+				<version>4.4.4</version>
+
+			</provider>
+		</parameter>
+		<classes>
+			<class name="Tests.SevenEleven.SmokeTest">
+				<methods>
+					<!-- <include name="TC001_Sign_In_Layout"></include>
+					<include name="TC003_User_cannot_sign_in_with_invalid_credentials"></include>
+					<include name="TC004_Sign_in_successfully_with_valid_credentials"></include> -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

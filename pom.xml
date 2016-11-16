@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sss.iframework</groupId>
+    <artifactId>IFramework</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <repositories>
+    </repositories>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <selenium.version>3.0.0</selenium.version>
+        <overwrite.binaries>false</overwrite.binaries>
+        <browser>chrome</browser>
+        <threads>1</threads>
+        <remote>false</remote>
+        <seleniumGridURL/>
+        <platform/>
+        <browserVersion/>
+        <proxyEnabled>false</proxyEnabled>
+        <proxyHost/>
+        <proxyPort/>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>1.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-remote-driver</artifactId>
+            <version>${selenium.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.github.detro.ghostdriver</groupId>
+                    <artifactId>phantomjsdriver</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.github.detro.ghostdriver</groupId>
+                    <artifactId>phantomjsdriver</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.uncommons</groupId>
+            <artifactId>reportng</artifactId>
+            <version>1.1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>velocity</groupId>
+            <artifactId>velocity-dep</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>selenium-tests</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.5.1</version>
+                        <configuration>
+                            <source>1.8</source>
+                            <target>1.8</target>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.18.1</version>
+                        <configuration>
+                            <properties>
+                                <property>
+                                    <name>usedefaultlisteners</name>
+                                    <value>false</value>
+                                </property>
+                                <property>
+                                    <name>listener</name>
+                                    <value>com.sss.testng.IFrameworkTestListener,com.sss.testng.IFrameworkMethodListener,com.sss.testng.IFrameworkTestSuiteListener,com.sss.testng.IFrameworkSendReport</value>
+                                </property>
+                                <property>
+                                    <name>reporter</name>
+                                    <value>org.uncommons.reportng.HTMLReporter</value>
+                                </property>
+                                <workingDirectory>target/</workingDirectory>
+                            </properties>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>src/test/java/Test Suites/TestSuite_PC_browser_sample.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                            <reportsDirectory>${project.basedir}/out</reportsDirectory>
+                            <!--<skipTests>true</skipTests>-->
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-install-plugin</artifactId>
+                        <version>2.5.2</version>
+                        <executions>
+                            <execution>
+                                <id>install-external</id>
+                                <phase>clean</phase>
+                                <configuration>
+                                    <file>${basedir}/libs/reportng-1.1.4.jar</file>
+                                    <repositoryLayout>default</repositoryLayout>
+                                    <groupId>org.uncommons</groupId>
+                                    <artifactId>reportng</artifactId>
+                                    <version>1.1.4</version>
+                                    <packaging>jar</packaging>
+                                    <generatePom>true</generatePom>
+                                </configuration>
+                                <goals>
+                                    <goal>install-file</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>

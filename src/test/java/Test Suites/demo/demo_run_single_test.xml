@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="IFramework" parallel="tests" thread-count="5">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="com.sss.testng.IFrameworkSendReport"/>
+        <listener class-name="com.sss.testng.IFrameworkMethodListener"/>
+        <listener class-name="com.sss.testng.IFrameworkTestListener"/>
+        <listener class-name="com.sss.testng.IFrameworkTestSuiteListener"/>
+    </listeners>
+
+    <parameter name="log4j" value="true"/>
+
+    <test name="Selenium - TestNG - Chrome on PC">
+        <parameter name="device" value="mac">
+            <provider name="selenium" apptype="Chrome">
+                <driverexe>src/test/java/Resources/chromedriver</driverexe>
+            </provider>
+        </parameter>
+
+        <classes>
+            <class name="Tests.google.testing.uitesting">
+                <methods>
+                    <include name="TC001_Navigate_Google_Home"/>
+                    <exclude name="TC002_Checkk_button_Search"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

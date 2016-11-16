@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="IFramework">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.sss.testng.IFrameworkMethodListener"/>
+		<listener class-name="com.sss.testng.IFrameworkTestListener"/>
+		<listener class-name="com.sss.testng.IFrameworkTestSuiteListener"/>
+	</listeners>
+	<test name="Selenium - TestNG">
+		<parameter name="device" value="android">
+			<provider name="appium" apptype="Browser">
+				<remoteaddress>http://192.168.1.190:4622/wd/hub</remoteaddress>
+			</provider>
+		</parameter>
+		<classes>
+			 <class name="Tests.google.testing.uitesting">
+				 <!-- <methods>
+					 <include name="TC001_Sign_In_Layout"></include>
+					 <include name="TC002_Remember_Me_checkbox"></include>
+					 <include name="TC003_User_cannot_sign_in_with_invalid_credentials"></include>
+					 <include name="TC004_Sign_in_successfully_with_valid_credentials"></include>
+					 <include name="TC005_Create_Issue_Layout"></include>
+					 <include name="TC006_Create_issue_with_invalid_inputs_for_required_fields"></include>
+					 <include name="TC007_Create_issue_with_valid_inputs_for_required_fields_successfully"></include>
+					 <include name="TC008_User_can_edit_existing_issue_successfully"></include>
+					 <include name="TC009_User_can_delete_existing_issue_successfully"></include>
+				 </methods> -->
+			 </class>
+		</classes>
+	</test>	
+</suite> 

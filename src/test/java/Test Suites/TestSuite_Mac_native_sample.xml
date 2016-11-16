@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="IFramework">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.sss.testng.IFrameworkMethodListener"/>
+		<listener class-name="com.sss.testng.IFrameworkTestListener"/>
+	</listeners>
+	
+	<test name="Selenium - TestNG" >
+		<!--  sample on Chrome - PC -->
+				
+		<parameter name="device" value="mac">
+			<provider name="appium" apptype="mac">
+				<remoteaddress>http://192.168.0.213:4622/wd/hub</remoteaddress>
+				<apppath>Calculator</apppath>
+			</provider>
+		</parameter>
+		
+		<!--<parameter name ="grid" value="0">-->
+			<!--<ip>192.168.10.104</ip>-->
+			<!--<port>4444</port>-->
+		<!--</parameter>	-->
+		
+		
+		<classes>			
+			 <class name="NativeMac.FunctionalTests.NativeAppDemo" />
+		</classes>
+	</test>
+	
+</suite> 
