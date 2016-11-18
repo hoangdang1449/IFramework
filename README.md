@@ -26,7 +26,7 @@ Package IFramework is core of automation framework. It will provide features:
 - Handle and manage selenium webdriver base on value user input at xml (driver). It also handle Appium
 - Catch exception to loggin and handling
 - Helper to read from xml and
-`Framework also use log4j and testng as logging and manage test suites`
+- Framework also use log4j and testng as logging and manage test suites
 
 >IFramework only provide core library as backbone for automation framework. You can write other layer for testing approach which can use Keywork-Driven, BDD, TDD,... or any testing approach that you want. As example, I have write sample in repo call: Selenium-TestNG which will use IFramework as core and use Page Object Pattern, Keywork-Driven for testing approach.
 
