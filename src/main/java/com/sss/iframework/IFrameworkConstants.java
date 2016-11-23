@@ -8,6 +8,7 @@ public class IFrameworkConstants {
 	public static final String APP_TYPE_BUILTIN_BROWSER = "buitl-in browser";
 	public static final String APP_TYPE_CHROME = "chrome";
 	public static final String APP_TYPE_IE = "ie";
+	public static final String APP_TYPE_EDGE = "edge";
 	public static final String APP_TYPE_FIREFOX = "firefox";
 	public static final String APP_TYPE_NATIVE_APP = "native app";
 

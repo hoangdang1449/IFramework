@@ -34,6 +34,6 @@ public class IFrameworkMacSafariLocalDriver extends IFrameworkLocalDriver {
 
 	@Override
 	public String getApplicationType() {
-		return IFrameworkConstants.APP_TYPE_CHROME;
+		return IFrameworkConstants.APP_TYPE_SAFARI;
 	}
 } // end class

@@ -1,0 +1,73 @@
+<a id="{#$velocityCount}"></a>
+<h2>$result.testContext.name</h2>
+<p>
+  $messages.getString("testDuration"): $utils.formatDuration($utils.getDuration($result.testContext))s
+</p>
+<script type="text/javascript" src="reportng.js"></script>
+#set ($id = 0)
+#if ($failedConfigurations.size() > 0)
+  <table class="resultsTable configTable">
+    <tr><th colspan="4" class="header failedConfig">$messages.getString("failedConfiguration")</th></tr>
+    #set ($id = 0)
+    #foreach ($testClass in $failedConfigurations.keySet())
+      <tr class="group">
+        <td colspan="4">$testClass.name</td>
+      </tr>
+      #set ($classResults = $failedConfigurations.get($testClass))
+      #parse("class-results.html.vm")
+    #end
+
+    #if ($skippedConfigurations.size() > 0)
+      <tr><td colspan="4">&nbsp;</td></tr>
+      <tr><td colspan="4" class="header skippedConfig">$messages.getString("skippedConfiguration")</td></tr>
+      #set ($id = 0)
+      #foreach ($testClass in $skippedConfigurations.keySet())
+        <tr>
+          <td colspan="4" class="group">$testClass.name</td>
+        </tr>
+        #set ($classResults = $skippedConfigurations.get($testClass))
+        #parse ("class-results.html.vm")
+      #end
+    #end
+  </table>
+#end
+
+
+#if ($failedTests.size() > 0)
+  <table class="resultsTable">
+    <tr><th colspan="4" class="header failed">$messages.getString("failedTests")</th></tr>
+    #foreach ($testClass in $failedTests.keySet())
+      <tr>
+        <td colspan="4" class="group">$testClass.name</td>
+      </tr>
+      #set ($classResults = $failedTests.get($testClass))
+      #parse ("class-results.html.vm")
+    #end
+  </table>
+#end
+
+#if ($skippedTests.size() > 0)
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="4" class="header skipped">$messages.getString("skippedTests")</th></tr>
+    #foreach ($testClass in $skippedTests.keySet())
+      <tr>
+        <td colspan="4" class="group">$testClass.name</td>
+      </tr>
+      #set ($classResults = $skippedTests.get($testClass))
+      #parse ("class-results.html.vm")
+    #end
+  </table>
+#end
+
+#if ($passedTests.size() > 0)
+  <table class="resultsTable">
+    <tr><th colspan="4" class="header passed">$messages.getString("passedTests")</th></tr>
+    #foreach ($testClass in $passedTests.keySet())
+      <tr>
+        <td colspan="4" class="group">$testClass.name</td>
+      </tr>
+      #set ($classResults = $passedTests.get($testClass))
+      #parse ("class-results.html.vm")
+    #end
+  </table>
+#end

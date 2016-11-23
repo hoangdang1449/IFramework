@@ -1,0 +1,2 @@
+2016-11-18 15:59:50,241 INFO  [com.sss.testng.IFrameworkTestListener] - Test[HQ Product Register] - thread[9] 
+2016-11-18 15:59:50,824 INFO  [com.sss.testng.IFrameworkTestListener] - Test[HQ Product Register] - thread[9] 
