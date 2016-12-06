@@ -17,7 +17,8 @@ public class ProductRegisterTest {
 
     @Test
     public void T001_Login() throws Exception {
-        IFrameworkAutomation.openURL("https://stag-hq-frontend.ssf.vn/");
+        IFrameworkAutomation.openURL("https://dev-hq-frontend.ssf.vn/");
         HQLoginPage.login("admin4","123456");
+
     }
 }
