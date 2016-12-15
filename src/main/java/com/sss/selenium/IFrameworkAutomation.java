@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
 public class IFrameworkAutomation {
 
 	private static IFrameworkWebDriver getIFrameworkWebDriver() {
@@ -64,7 +65,6 @@ public class IFrameworkAutomation {
 		return waitForControl(element, timeout);
 	}
 
-
 	public static void waitForControlClose(By element) {
 		int timeout = IFrameworkSetting.getObjecWait();
 		try {
@@ -99,13 +99,15 @@ public class IFrameworkAutomation {
 					break;
 				}
 			}
-			if (title.equals(pageTitle)) isExist = true;
+			if (title.equals(pageTitle))
+				isExist = true;
 		} catch (Exception e) {
 			isExist = false;
 			System.err.println("isPageDisplayed: title=" + pageTitle + " - message: " + e.getMessage());
 		}
 
-		System.out.println("isPageDisplayed - pageTitle: " + pageTitle + " >> " + isExist + " .." + Thread.currentThread().getId());
+		System.out.println("isPageDisplayed - pageTitle: " + pageTitle + " >> " + isExist + " .."
+				+ Thread.currentThread().getId());
 		return isExist;
 	}
 
@@ -145,7 +147,8 @@ public class IFrameworkAutomation {
 	public static void clickByJS(By element) {
 		System.out.println(">>>>> clickByJS");
 		waitForControl(element);
-		((JavascriptExecutor) IFrameworkAutomation.getDriver()).executeScript("arguments[0].click();", IFrameworkAutomation.getDriver().findElement(element));
+		((JavascriptExecutor) IFrameworkAutomation.getDriver()).executeScript("arguments[0].click();",
+				IFrameworkAutomation.getDriver().findElement(element));
 	}
 
 	public static void click(By element) {
@@ -279,11 +282,13 @@ public class IFrameworkAutomation {
 		focusElement(element);
 		if (isElementExists(element)) {
 			click(By.className("datepicker-switch"));
-			calYear = IFrameworkAutomation.getDriver().findElement(By.xpath("//div[2]/div[2]/table/thead/tr/th[2]")).getText();
+			calYear = IFrameworkAutomation.getDriver().findElement(By.xpath("//div[2]/div[2]/table/thead/tr/th[2]"))
+					.getText();
 			expYear = Integer.parseInt(calYear);
 			try {
 				int numSelectYear = Integer.parseInt(year) - Integer.parseInt(calYear);
-				WebElement slectyear = IFrameworkAutomation.getDriver().findElement(By.xpath("html/body/div[2]/div[1]/table/thead/tr[1]"));
+				WebElement slectyear = IFrameworkAutomation.getDriver()
+						.findElement(By.xpath("html/body/div[2]/div[1]/table/thead/tr[1]"));
 				if (numSelectYear > 0) {
 					for (int i = 0; i < numSelectYear; i++) {
 						slectyear.findElement(By.className("next")).click();
@@ -293,8 +298,12 @@ public class IFrameworkAutomation {
 						slectyear.findElement(By.className("prev")).click();
 					}
 				}
-				IFrameworkAutomation.getDriver().findElement(By.xpath("//div[2]/div[2]/table/tbody/tr/td/span[" + (Integer.parseInt(month) + 2) + "]")).click();
-				IFrameworkAutomation.getDriver().findElement(By.xpath("//table/tbody/tr/td[text()='" + day + "' and @class='day']")).click();
+				IFrameworkAutomation.getDriver()
+						.findElement(By
+								.xpath("//div[2]/div[2]/table/tbody/tr/td/span[" + (Integer.parseInt(month) + 2) + "]"))
+						.click();
+				IFrameworkAutomation.getDriver()
+						.findElement(By.xpath("//table/tbody/tr/td[text()='" + day + "' and @class='day']")).click();
 			} catch (Exception e) {
 				System.out.println("msg : " + e.toString());
 			}
@@ -303,6 +312,6 @@ public class IFrameworkAutomation {
 
 	public static void close() {
 		IFrameworkDriverManager.closeWebDriver();
-//		IFrameworkAppium.stopServer();
+		//		IFrameworkAppium.stopServer();
 	}
 }

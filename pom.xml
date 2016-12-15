@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project 
+    xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.sss.iframework</groupId>
     <artifactId>IFramework</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <repositories>
-    </repositories>
-
+    <repositories></repositories>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <selenium.version>3.0.0</selenium.version>
+        <selenium.version>3.0.1</selenium.version>
         <overwrite.binaries>false</overwrite.binaries>
         <browser>chrome</browser>
         <threads>1</threads>
@@ -25,7 +22,6 @@
         <proxyHost/>
         <proxyPort/>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>javax.mail</groupId>
@@ -37,19 +33,16 @@
             <artifactId>commons-io</artifactId>
             <version>2.2</version>
         </dependency>
-
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>4.1.2</version>
         </dependency>
-
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.16</version>
         </dependency>
-
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-all</artifactId>
@@ -77,40 +70,40 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
         <dependency>
             <groupId>org.uncommons</groupId>
             <artifactId>reportng</artifactId>
             <version>1.1.4</version>
         </dependency>
-
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.8</version>
         </dependency>
-
         <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
             <version>3.0</version>
         </dependency>
-
         <dependency>
             <groupId>velocity</groupId>
             <artifactId>velocity-dep</artifactId>
             <version>1.4</version>
         </dependency>
-
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.8.0</version>
         </dependency>
-
-
     </dependencies>
-
+    <!--<build>-->
+    <!--<directory>${project.basedir}/target</directory>-->
+    <!--<outputDirectory>${project.build.directory}/classes</outputDirectory>-->
+    <!--<finalName>${project.artifactId}-${project.version}</finalName>-->
+    <!--<testOutputDirectory>${project.build.directory}/classes</testOutputDirectory>-->
+    <!--<sourceDirectory>${project.basedir}/src/</sourceDirectory>-->
+    <!--<testSourceDirectory>${project.basedir}/test/</testSourceDirectory>-->
+    <!--</build>-->
     <profiles>
         <profile>
             <id>selenium-tests</id>
@@ -119,6 +112,7 @@
             </activation>
             <build>
                 <plugins>
+                    <!--<plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId><version>2.9</version><executions><execution><id>build-classpath</id><phase>generate-sources</phase><goals><goal>build-classpath</goal></goals></execution></executions><configuration><outputFile>classpath.txt</outputFile></configuration></plugin>-->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-compiler-plugin</artifactId>
@@ -149,10 +143,10 @@
                                 <workingDirectory>target/</workingDirectory>
                             </properties>
                             <suiteXmlFiles>
-                                <suiteXmlFile>src/test/java/Test Suites/TestSuite_PC_browser_sample.xml</suiteXmlFile>
+                                <suiteXmlFile>src/test/java/Test Suites/HQProductMaster/HQProductRegister.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <reportsDirectory>${project.basedir}/out</reportsDirectory>
-                            <!--<skipTests>true</skipTests>-->
+                            <skipTests>true</skipTests>
                         </configuration>
                     </plugin>
                     <plugin>
@@ -182,5 +176,4 @@
             </build>
         </profile>
     </profiles>
-
 </project>

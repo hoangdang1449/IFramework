@@ -1,0 +1,147 @@
+INFO	?	main	2016-12-15T11:14:45.258Z	org.javacs.Main#connectToNode	Connected to parent using socket on port 55282
+INFO	?	main	2016-12-15T11:14:45.640Z	org.javacs.JavaLanguageServer#doLint	Lint [/Users/vin/Project/711-Automation/src/test/java/Interfaces/sss/hq/HQFrontEndMainPage.java]
+INFO	?	main	2016-12-15T11:14:45.667Z	org.javacs.JavaLanguageServer#buildClassPath	Emit classpath to /var/folders/jq/x9q_kdgx3f5_h0_dzmkv051m0000gp/T/classpath3770744812699444479.txt
+INFO	?	main	2016-12-15T11:14:49.716Z	org.javacs.JavaLanguageServer#sourceDirectories	Use default source directory src/main/java
+INFO	?	main	2016-12-15T11:14:49.718Z	org.javacs.JavaLanguageServer#sourceDirectories	Use default test directory src/test/java
+INFO	?	InitialIndex	2016-12-15T11:14:50.062Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/appium/android/IFrameworkAndroidBrowserLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.069Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/appium/android/IFrameworkAndroidChromeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.071Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/appium/android/IFrameworkAndroidNativeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.078Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/appium/IFrameworkAppium.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.081Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/appium/ios/IFrameworkiOSNativeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.082Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/appium/ios/IFrameworkiOSSafariLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.091Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/IFrameworkDriverFactory.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.096Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/IFrameworkDriverManager.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.104Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/IFrameworkLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.107Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/IFrameworkRemoteDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.109Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/IFrameworkWebDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.110Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/mac/IFrameworkMacChromeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.112Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/mac/IFrameworkMacFirefoxLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.114Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/mac/IFrameworkMacSafariLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.116Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsChromeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.119Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsChromeRemoteDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.122Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsEdgeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.124Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsFirefoxLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.126Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsFirefoxRemoteDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.131Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsIeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.153Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsIeRemoteDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.169Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsSafariLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.170Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/exception/IFrameworkBaseException.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.172Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/helper/ClassLoaderHelper.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.192Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/helper/ReflectionHelper.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.203Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/helper/xml/ConfigItem.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.204Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/helper/xml/DeviceConfigItem.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.206Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/helper/xml/GridConfigItem.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.207Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/helper/xml/XMLParser.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.210Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/IFrameworkAutomationData.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.211Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/IFrameworkConstants.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.212Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/IFrameworkNavigator.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.215Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/log4j/Log4jConstants.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.218Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/selenium/IFrameworkAssert.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.220Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/selenium/IFrameworkAutomation.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.226Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/selenium/IFrameworkElementDefinition.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.227Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/selenium/IFrameworkSetting.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.229Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkAbstractReporter.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.232Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkCustomReportHTML.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.237Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkMethodListener.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.239Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkSendReport.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.241Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkTestListener.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.244Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkTestNGAppender.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.246Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkTestSuiteListener.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.250Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkVerificationFailures.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.251Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/utility/IFrameworkFileAndDirectory.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.254Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/utility/IFrameworkSendEmail.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.257Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Actions/Calculator/Function.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.259Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Actions/Common/Common.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.260Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Actions/Common/Constants.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.262Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Actions/google/Google.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.263Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Actions/google/PageFactory.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.264Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Interfaces/Android/AndroidScreenEntity.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.265Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Interfaces/Android/SevenElevenShiftIn.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.267Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Interfaces/Calculator/CalculatorEntity.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.268Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Interfaces/google/GoogleHomeEntity.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.269Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Interfaces/sss/hq/HQFrontEndMainPage.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.271Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Interfaces/sss/hq/HQLoginPage.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.273Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Tests/google/testing/uitesting.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.275Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Tests/SevenEleven/ProductRegisterTest.java
+INFO	?	InitialIndex	2016-12-15T11:14:50.276Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Tests/SevenEleven/SmokeTest.java
+INFO	?	main	2016-12-15T11:15:24.504Z	org.javacs.JavaLanguageServer#buildClassPath	Emit classpath to /var/folders/jq/x9q_kdgx3f5_h0_dzmkv051m0000gp/T/classpath2979581898856022542.txt
+INFO	?	main	2016-12-15T11:15:28.350Z	org.javacs.JavaLanguageServer#sourceDirectories	Use default source directory src/main/java
+INFO	?	main	2016-12-15T11:15:28.352Z	org.javacs.JavaLanguageServer#sourceDirectories	Use default test directory src/test/java
+INFO	?	main	2016-12-15T11:19:39.420Z	org.javacs.JavaLanguageServer#doLint	Lint [/Users/vin/Project/711-Automation/src/main/java/com/sss/selenium/IFrameworkAutomation.java]
+INFO	?	main	2016-12-15T11:19:39.424Z	org.javacs.JavaLanguageServer#buildClassPath	Emit classpath to /var/folders/jq/x9q_kdgx3f5_h0_dzmkv051m0000gp/T/classpath481618482036864575.txt
+INFO	?	main	2016-12-15T11:19:45.848Z	org.javacs.JavaLanguageServer#sourceDirectories	Use default source directory src/main/java
+INFO	?	main	2016-12-15T11:19:45.849Z	org.javacs.JavaLanguageServer#sourceDirectories	Use default test directory src/test/java
+INFO	?	InitialIndex	2016-12-15T11:19:45.858Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/appium/android/IFrameworkAndroidBrowserLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.862Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/appium/android/IFrameworkAndroidChromeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.863Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/appium/android/IFrameworkAndroidNativeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.865Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/appium/IFrameworkAppium.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.866Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/appium/ios/IFrameworkiOSNativeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.867Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/appium/ios/IFrameworkiOSSafariLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.868Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/IFrameworkDriverFactory.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.869Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/IFrameworkDriverManager.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.870Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/IFrameworkLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.871Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/IFrameworkRemoteDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.872Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/IFrameworkWebDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.873Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/mac/IFrameworkMacChromeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.874Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/mac/IFrameworkMacFirefoxLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.885Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/mac/IFrameworkMacSafariLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.886Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsChromeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.888Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsChromeRemoteDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.889Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsEdgeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.889Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsFirefoxLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.890Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsFirefoxRemoteDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.891Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsIeLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.892Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsIeRemoteDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.894Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/selenium/pc/IFrameworkWindowsSafariLocalDriver.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.895Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/exception/IFrameworkBaseException.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.895Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/helper/ClassLoaderHelper.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.897Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/helper/ReflectionHelper.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.900Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/helper/xml/ConfigItem.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.901Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/helper/xml/DeviceConfigItem.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.901Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/helper/xml/GridConfigItem.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.902Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/helper/xml/XMLParser.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.904Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/IFrameworkAutomationData.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.904Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/IFrameworkConstants.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.905Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/IFrameworkNavigator.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.906Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/log4j/Log4jConstants.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.907Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/selenium/IFrameworkAssert.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.907Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/selenium/IFrameworkAutomation.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.910Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/selenium/IFrameworkElementDefinition.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.910Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/selenium/IFrameworkSetting.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.911Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkAbstractReporter.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.917Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkCustomReportHTML.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.919Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkMethodListener.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.920Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkSendReport.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.921Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkTestListener.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.922Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkTestNGAppender.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.923Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkTestSuiteListener.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.924Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/testng/IFrameworkVerificationFailures.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.925Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/utility/IFrameworkFileAndDirectory.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.926Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/main/java/com/sss/utility/IFrameworkSendEmail.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.928Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Actions/Calculator/Function.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.932Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Actions/Common/Common.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.936Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Actions/Common/Constants.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.937Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Actions/google/Google.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.938Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Actions/google/PageFactory.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.938Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Interfaces/Android/AndroidScreenEntity.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.939Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Interfaces/Android/SevenElevenShiftIn.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.940Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Interfaces/Calculator/CalculatorEntity.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.941Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Interfaces/google/GoogleHomeEntity.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.941Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Interfaces/sss/hq/HQFrontEndMainPage.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.943Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Interfaces/sss/hq/HQLoginPage.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.944Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Tests/google/testing/uitesting.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.945Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Tests/SevenEleven/ProductRegisterTest.java
+INFO	?	InitialIndex	2016-12-15T11:19:45.946Z	org.javacs.SymbolIndex$1#parseAll	Index /Users/vin/Project/711-Automation/src/test/java/Tests/SevenEleven/SmokeTest.java
+INFO	?	main	2016-12-15T11:19:46.038Z	org.javacs.JavaLanguageServer#buildClassPath	Emit classpath to /var/folders/jq/x9q_kdgx3f5_h0_dzmkv051m0000gp/T/classpath8986388608084778510.txt
+INFO	?	main	2016-12-15T11:19:50.286Z	org.javacs.JavaLanguageServer#sourceDirectories	Use default source directory src/main/java
+INFO	?	main	2016-12-15T11:19:50.290Z	org.javacs.JavaLanguageServer#sourceDirectories	Use default test directory src/test/java
+INFO	?	main	2016-12-15T11:20:03.710Z	org.javacs.JavaLanguageServer#doLint	Lint [/Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/IFrameworkWebDriver.java]
+INFO	?	main	2016-12-15T11:20:03.725Z	org.javacs.JavaLanguageServer#buildClassPath	Emit classpath to /var/folders/jq/x9q_kdgx3f5_h0_dzmkv051m0000gp/T/classpath7887489554069271801.txt
+INFO	?	main	2016-12-15T11:20:09.528Z	org.javacs.JavaLanguageServer#sourceDirectories	Use default source directory src/main/java
+INFO	?	main	2016-12-15T11:20:09.530Z	org.javacs.JavaLanguageServer#sourceDirectories	Use default test directory src/test/java
+INFO	?	main	2016-12-15T11:20:09.536Z	org.javacs.JavaLanguageServer#buildClassPath	Emit classpath to /var/folders/jq/x9q_kdgx3f5_h0_dzmkv051m0000gp/T/classpath7427464876587551477.txt
+INFO	?	main	2016-12-15T11:20:13.981Z	org.javacs.JavaLanguageServer#sourceDirectories	Use default source directory src/main/java
+INFO	?	main	2016-12-15T11:20:13.984Z	org.javacs.JavaLanguageServer#sourceDirectories	Use default test directory src/test/java
+INFO	?	main	2016-12-15T11:20:16.225Z	org.javacs.JavaLanguageServer#doLint	Lint [/Users/vin/Project/711-Automation/src/main/java/com/sss/selenium/IFrameworkAutomation.java]
+INFO	?	main	2016-12-15T11:20:21.767Z	org.javacs.JavaLanguageServer#doLint	Lint [/Users/vin/Project/711-Automation/src/main/java/com/sss/iframework/driver/IFrameworkWebDriver.java]
+INFO	?	main	2016-12-15T11:20:53.452Z	org.javacs.Main#run	Connection closed

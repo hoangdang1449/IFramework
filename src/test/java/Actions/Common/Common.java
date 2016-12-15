@@ -9,7 +9,7 @@ public class Common {
 		IFrameworkSetting.setObjecWait(15);
 		/*IFrameworkSetting.setChromeDriverExecutable(new File("Resources","chromedriver.exe").getAbsolutePath());
 		IFrameworkSetting.setIeDriverExecutable(new File("Resources","IEDriverServer.exe").getAbsolutePath());*/
-		
+
 	}
 
 }
