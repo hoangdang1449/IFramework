@@ -11,39 +11,34 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class IFrameworkiOSSafariLocalDriver extends IFrameworkLocalDriver {
-	protected String _remoteAddress;
+  private String _remoteAddress;
 
-	public void setRemoteAddress(String remoteAddress) {
-		this._remoteAddress = remoteAddress;
-	}
+  public void setRemoteAddress(String remoteAddress) {
+    this._remoteAddress = remoteAddress;
+  }
 
-	public IFrameworkiOSSafariLocalDriver() {
-	}
+  public IFrameworkiOSSafariLocalDriver() {}
 
-	@Override
-	public String getDeviceName() {
-		return IFrameworkConstants.DEVICE_IOS;
-	} // end method
+  @Override
+  public String getDeviceName() {
+    return IFrameworkConstants.DEVICE_IOS;
+  } // end method
 
-	@Override
-	public String getProvider() {
-		return "appium";
-	}
+  @Override
+  public String getProvider() {
+    return "appium";
+  }
 
-	@Override
-	public void createWebDriver() throws MalformedURLException {
-		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-		desiredCapabilities
-				.setCapability(CapabilityType.BROWSER_NAME, "Safari");
-		this._webDriver = new IOSDriver(new URL(_remoteAddress),
-				desiredCapabilities);
-		_webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+  @Override
+  public void createWebDriver() throws MalformedURLException {
+    DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+    desiredCapabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");
+    this._webDriver = new IOSDriver(new URL(_remoteAddress), desiredCapabilities);
+    _webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+  }
 
-	}
-
-	@Override
-	public String getApplicationType() {
-		return IFrameworkConstants.APP_TYPE_SAFARI;
-	}
-
+  @Override
+  public String getApplicationType() {
+    return IFrameworkConstants.APP_TYPE_SAFARI;
+  }
 } // end class

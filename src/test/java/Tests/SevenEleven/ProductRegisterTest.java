@@ -7,19 +7,17 @@ import com.sss.selenium.IFrameworkAutomation;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-/**
- * Created by vin on 11/18/16.
- */
+/** Created by vin on 11/18/16. */
 public class ProductRegisterTest {
-    @AfterTest
-    public void init() {
-        Common.config();
-    }
+  @AfterTest
+  public void init() {
+    Common.config();
+  }
 
-    @Test
-    public void T001_Login() throws Exception {
-        IFrameworkAutomation.openURL("https://dev-hq-frontend.ssf.vn/");
-        HQLoginPage.login("admin4", "123456");
-        HQFrontEndMainPage.createNormalMerchandiseProduct("Testing Automation");
-    }
+  @Test
+  public void T001_Login() throws Exception {
+    IFrameworkAutomation.openURL("https://dev-hq-frontend.ssf.vn/");
+    HQLoginPage.login("admin4", "123456");
+    HQFrontEndMainPage.createNormalMerchandiseProduct("Testing Automation");
+  }
 }
