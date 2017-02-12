@@ -3,6 +3,7 @@ package Tests.google.testing;
 import Actions.Common.Common;
 import Actions.google.PageFactory;
 import Interfaces.google.GoogleHomeEntity;
+import com.sss.selenium.IFrameworkAssert;
 import com.sss.selenium.IFrameworkAutomation;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -20,7 +21,7 @@ public class uitesting {
 	public void TC001_Navigate_Google_Home() throws Exception {
 		PageFactory.GoogleHome().Search("This is testing");
 		String txtSearch = IFrameworkAutomation.getText(GoogleHomeEntity.Search);
-//		IFrameworkAssert.verifyEquals(txtSearch, "This is testing");
+		IFrameworkAssert.verifyEquals(txtSearch, "This is testing");
 	}
 
 	@Test(description = "Check button Search")

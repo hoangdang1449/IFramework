@@ -21,10 +21,10 @@
 
         <classes>
             <class name="Tests.google.testing.uitesting">
-                <methods>
-                    <include name="TC001_Navigate_Google_Home"/>
-                    <exclude name="TC002_Checkk_button_Search"/>
-                </methods>
+                <!--<methods>-->
+                    <!--<include name="TC001_Navigate_Google_Home"/>-->
+                    <!--<exclude name="TC002_Checkk_button_Search"/>-->
+                <!--</methods>-->
             </class>
         </classes>
     </test>

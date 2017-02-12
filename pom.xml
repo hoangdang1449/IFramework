@@ -6,7 +6,7 @@
     <groupId>com.sss.iframework</groupId>
     <artifactId>IFramework</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <repositories></repositories>
+    <repositories/>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -95,6 +95,11 @@
             <artifactId>gson</artifactId>
             <version>2.8.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.5.0</version>
+        </dependency>
     </dependencies>
     <!--<build>-->
     <!--<directory>${project.basedir}/target</directory>-->
@@ -168,6 +173,18 @@
                                 </configuration>
                                 <goals>
                                     <goal>install-file</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jar-plugin</artifactId>
+                        <version>3.0.2</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>test-jar</goal>
                                 </goals>
                             </execution>
                         </executions>

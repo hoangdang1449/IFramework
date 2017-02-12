@@ -16,10 +16,10 @@ public class HQFrontEndMainPage {
 
   private static By txtProductShortNameVN =
       IFrameworkElementDefinition.Xpath(
-          "//*[@id=\"app\"]/div/div/div/div/section[2]/div[3]/div[1]/div/div[1]/div/div/div[1]/input");
+          "//*[@id=\"app\"]/div/div/div/div/section[2]/div[3]/div[1]/div/div[1]/div/div/div[1]/div/div[1]/input");
   private static By cboRetailBusinessType =
       IFrameworkElementDefinition.Xpath(
-          "//*[@id=\"app\"]/div/div/div/div/section[2]/div[3]/div[1]/div/div[2]/div/div/select");
+          "//*[@id=\"app\"]/div/div/div/div/section[2]/div[3]/div[1]/div/div[2]/div/div/div/div/select");
   private static By txtProductFullNameVN =
       IFrameworkElementDefinition.Xpath(
           "//*[@id=\"app\"]/div/div/div/div/section[2]/div[3]/div[2]/div/div/div/div/div[1]/div/div/div[1]/input");
@@ -95,8 +95,7 @@ public class HQFrontEndMainPage {
     IFrameworkAutomation.click(btnSave);
   }
 
-  public static void selectCustomCombobox(By element, String value) throws InterruptedException {
-    //        IFrameworkAutomation.click(element);
+  private static void selectCustomCombobox(By element, String value) throws InterruptedException {
 
     IFrameworkAutomation.waitForControl(element);
     WebElement webElement = IFrameworkAutomation.getDriver().findElement(element);
@@ -105,10 +104,11 @@ public class HQFrontEndMainPage {
       System.out.println("....enter - element: " + element.toString() + " - value: " + value);
     }
 
-    webElement.sendKeys(value);
-    Thread.sleep(5000);
+    if (webElement != null) {
+      webElement.sendKeys(value);
+    }
+    Thread.sleep(3000);
 
-    //Didn't work with Unicode character
     IFrameworkAutomation.click(By.xpath("//*[contains(text(), '" + value + "')]"));
   }
 }

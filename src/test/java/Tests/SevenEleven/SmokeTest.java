@@ -7,6 +7,7 @@ import com.sss.selenium.IFrameworkAutomation;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import com.sss.selenium.*;
 
 /** Created by vin on 11/7/16. */
 public class SmokeTest {
