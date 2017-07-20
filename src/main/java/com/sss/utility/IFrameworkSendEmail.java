@@ -8,7 +8,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 
 public class IFrameworkSendEmail {
-  public IFrameworkSendEmail() {}
+  public IFrameworkSendEmail() {
+  }
 
   public void SendEmail(String htmlContain) throws Exception {
     // Recipient's email ID needs to be mentioned.
@@ -35,14 +36,11 @@ public class IFrameworkSendEmail {
     props.setProperty("mail.smtp.socketFactory.port", "465");
 
     // Get the Session object.
-    Session session =
-        Session.getInstance(
-            props,
-            new javax.mail.Authenticator() {
-              protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(username, password);
-              }
-            });
+    Session session = Session.getInstance(props, new javax.mail.Authenticator() {
+      protected PasswordAuthentication getPasswordAuthentication() {
+        return new PasswordAuthentication(username, password);
+      }
+    });
 
     try {
       // Create a default MimeMessage object.
@@ -74,8 +72,7 @@ public class IFrameworkSendEmail {
   public void SendEmailWithHTML(String htmlFileLocation) throws Exception {
     IFrameworkFileAndDirectory iDirectory = new IFrameworkFileAndDirectory();
     String htmlFolder = iDirectory.getLatestDirectory(htmlFileLocation);
-    String htmlContain =
-        iDirectory.readFile(htmlFolder + "emailable-report.html", StandardCharsets.UTF_8);
+    String htmlContain = iDirectory.readFile(htmlFolder + "emailable-report.html", StandardCharsets.UTF_8);
     // Recipient's email ID needs to be mentioned.
     String to = "hoangviet@siliconstraits.com";
 
@@ -100,14 +97,11 @@ public class IFrameworkSendEmail {
     props.setProperty("mail.smtp.socketFactory.port", "465");
 
     // Get the Session object.
-    Session session =
-        Session.getInstance(
-            props,
-            new javax.mail.Authenticator() {
-              protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(username, password);
-              }
-            });
+    Session session = Session.getInstance(props, new javax.mail.Authenticator() {
+      protected PasswordAuthentication getPasswordAuthentication() {
+        return new PasswordAuthentication(username, password);
+      }
+    });
 
     try {
       // Create a default MimeMessage object.

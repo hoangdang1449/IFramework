@@ -14,7 +14,8 @@ import static org.apache.http.protocol.HTTP.USER_AGENT;
  */
 public class IFrameworkRESTFullAPI {
     public static synchronized IFrameworkRESTFullAPI getInstance() {
-        if (instance == null) instance = new IFrameworkRESTFullAPI();
+        if (instance == null)
+            instance = new IFrameworkRESTFullAPI();
         return instance;
     }
 

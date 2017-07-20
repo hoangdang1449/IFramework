@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 /** Created by vin on 11/18/16. */
 public class ProductRegisterTest {
   @BeforeTest
-  public void init() {
+  public void init() throws Exception {
     Common.config();
   }
 
@@ -23,7 +23,7 @@ public class ProductRegisterTest {
   }
 
   @AfterTest
-  public  void tearDown(){
+  public void tearDown(){
     IFrameworkAutomation.close();
   }
 }

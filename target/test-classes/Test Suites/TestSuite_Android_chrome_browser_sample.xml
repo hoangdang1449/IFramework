@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--<!DOCTYPE suite SYSTEM "IFramework.dtd" >-->
+
+<suite name="IFramework">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.sss.testng.IFrameworkMethodListener"/>
+		<listener class-name="com.sss.testng.IFrameworkTestListener"/>
+		<listener class-name="com.sss.testng.IFrameworkTestSuiteListener"/>
+	</listeners>
+	<test name="Selenium - TestNG">
+		<parameter name="device" value="android">	
+			<provider name="appium" apptype="Chrome">
+				<!--<remoteaddress>http://127.0.0.1:4723/wd/hub</remoteaddress>-->
+                <!--<devicename>SSS MiPad</devicename>-->
+			</provider>
+		</parameter>
+		
+		<!--<parameter name ="grid" value="0">		-->
+			<!--<ip>192.168.191.72</ip>-->
+			<!--<port>4444</port>-->
+		<!--</parameter>-->
+		
+		<classes>
+			 <class name="Tests.google.testing.uitesting">
+			 </class>
+		</classes>
+	</test>	
+</suite> 
