@@ -1,6 +1,7 @@
 /Users/vin/Projects/711-automation/src/test/java/Actions/Common/Constants.java
 /Users/vin/Projects/711-automation/src/test/java/Interfaces/Android/SevenElevenShiftIn.java
 /Users/vin/Projects/711-automation/src/test/java/Interfaces/sss/portal/CDCPortalMainPage.java
+/Users/vin/Projects/711-automation/src/test/java/Tests/SevenEleven/CDCSmokeTest.java
 /Users/vin/Projects/711-automation/src/test/java/Interfaces/Android/AndroidScreenEntity.java
 /Users/vin/Projects/711-automation/src/test/java/Actions/google/Google.java
 /Users/vin/Projects/711-automation/src/test/java/Tests/SevenEleven/SmokeTest.java

@@ -32,7 +32,7 @@ public class IFrameworkAndroidBrowserLocalDriver extends IFrameworkLocalDriver {
 
   @Override
   public void createWebDriver() throws MalformedURLException {
-    IFrameworkAppium appium = new IFrameworkAppium();
+    // IFrameworkAppium appium = new IFrameworkAppium();
     IFrameworkAppium.startServer();
 
     //Get appium local service after start

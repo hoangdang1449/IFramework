@@ -109,19 +109,19 @@
     <!--<sourceDirectory>${project.basedir}/src/</sourceDirectory>-->
     <!--<testSourceDirectory>${project.basedir}/test/</testSourceDirectory>-->
     <!--</build>-->
-    <profiles>
+    <!-- <profiles>
         <profile>
             <id>selenium-tests</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
-            </activation>
+            </activation> -->
             <build>
                 <plugins>
                     <!--<plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId><version>2.9</version><executions><execution><id>build-classpath</id><phase>generate-sources</phase><goals><goal>build-classpath</goal></goals></execution></executions><configuration><outputFile>classpath.txt</outputFile></configuration></plugin>-->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-compiler-plugin</artifactId>
-                        <version>3.5.1</version>
+                        <version>3.6.1</version>
                         <configuration>
                             <source>1.8</source>
                             <target>1.8</target>
@@ -147,9 +147,9 @@
                                 </property>
                                 <workingDirectory>target/</workingDirectory>
                             </properties>
-                             <suiteXmlFiles>
-                                <suiteXmlFile>src/test/java/Test Suites/demo/demo_run_single_test.xml</suiteXmlFile>
-                            </suiteXmlFiles> 
+                             <!-- <suiteXmlFiles>
+                                <suiteXmlFile>src/test/java/Test Suites/HQProductMaster/HQProductRegister.xml</suiteXmlFile>
+                            </suiteXmlFiles>  -->
                             <reportsDirectory>${project.basedir}/out</reportsDirectory>
                             <skipTests>false</skipTests> 
                         </configuration> 
@@ -191,6 +191,6 @@
                     </plugin>
                 </plugins>
             </build>
-        </profile>
-    </profiles>
-</project>
+        <!-- </profile>
+    </profiles>-->
+ </project> 
